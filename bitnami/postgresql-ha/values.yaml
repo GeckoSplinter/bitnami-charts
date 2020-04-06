@@ -690,6 +690,11 @@ pgpool:
   ##
   useLoadBalancing: true
 
+  ## LoadBalancer on write actions behavior
+  ## one of: [off, transaction, trans_transaction, always]
+  ##
+  loadBalancingOnWrite: transaction
+
   ## Pgpool configuration
   ## Specify content for pgpool.conf
   ## Alternatively, you can put your pgpool.conf under the files/ directory
